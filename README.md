@@ -4,3 +4,4 @@ Acil çağrı butonu, merkezde olmayan personellerin çağrılmasını ve olay y
 
 Ayrıca, yöneticilerin görev oluşturabileceği, düzenleyebileceği ve personellere atayabileceği bir görev listesi de bulunmaktadır. Bu görev listesi, itfaiye birimlerinin etkin bir şekilde yönetilmesini ve koordine edilmesini sağlamak amacıyla eklenmiştir.
 
+https://fire-department.vercel.app/
