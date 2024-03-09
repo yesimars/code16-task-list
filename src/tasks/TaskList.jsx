@@ -28,7 +28,7 @@ function TaskList({ tasks, removeTask, editTask, doneTask }) {
             <div className='p-4 m-2 bg-light mb-5 border-0 rounded bg-primary-subtle'>
                 <p className='mb-3 m-1'>
                     <div className="input-group">
-                        <select className="form-select bg-primary-subtle" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <select className="form-select bg-primary-subtle shadow border-0" id="inputGroupSelect04" aria-label="Example select with button addon">
                             <option selected>Seçiniz...</option>
                             <option value="1">İtfaiye Birim Amirleri</option>
                             <option value="2">İtfaiye Şube Müdürleri</option>
@@ -40,14 +40,14 @@ function TaskList({ tasks, removeTask, editTask, doneTask }) {
                         </select>
                         <span
                             onClick={handlePriorityFilter}//öncelikli olanları gösteren buton
-                            className={`btn btn-sm ${!priority ? "btn-info" : "btn-primary"} float-end`}>
+                            className={`btn btn-sm ${!priority ? "btn-info" : "btn-primary"} float-end shadow`}>
                             {!priority ? "Öncelikli Olanları Göster" : "Hepsini Göster"}
                         </span>
                     </div>
 
                 </p>
 
-                <ul className='list-group my-3'>
+                <ul className='list-group my-3 shadow'>
                     {filteredTasks.map(
                         (item, index) =>
                             // list-group my-3 bu kod sayfanın üst sınırı ile 
@@ -60,7 +60,7 @@ function TaskList({ tasks, removeTask, editTask, doneTask }) {
                                 doneTask={doneTask} />)}
 
                 </ul>
-                <button className="btn btn-outline-primary mt-1" type="button">Gönder</button>
+                <button className="btn btn-outline-primary mt-1 shadow" type="button">Gönder</button>
             </div>
 
         </>
