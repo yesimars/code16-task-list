@@ -25,7 +25,7 @@ function TaskList({ tasks, removeTask, editTask, doneTask }) {
         //'mb-3' yazı büyüklüğünü ayarlar.
         <>
 
-            <div className='p-4 m-2 bg-light mb-5 border rounded bg-primary-subtle'>
+            <div className='p-4 m-2 bg-light mb-5 border-0 rounded bg-primary-subtle'>
                 <p className='mb-3 m-1'>
                     <div className="input-group">
                         <select className="form-select bg-primary-subtle" id="inputGroupSelect04" aria-label="Example select with button addon">
