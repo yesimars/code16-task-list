@@ -8,14 +8,14 @@ function NavBar({user, handleLogOut}) {
         <>
         <nav className="navbar navbar-expand-lg bg-primary-subtle" >
             <div className="container-fluid" >
-                <NavLink className="navbar-brand" to="/"><MdLocalFireDepartment />İtfaiye</NavLink>
+                <NavLink className="navbar-brand text-primary" to="/"><MdLocalFireDepartment />İtfaiye</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <NavLink className="nav-link active" to="/">Anasayfa</NavLink>
-                        <NavLink className="nav-link" to="/acilcagri"><AiFillAlert />Acil Çağrı</NavLink>
+                        <NavLink className="nav-link text-danger" to="/acilcagri"><AiFillAlert />Acil Çağrı</NavLink>
                                                 
                         {
                             user?
